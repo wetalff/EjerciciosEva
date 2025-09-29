@@ -27,16 +27,27 @@ class Program
             Console.WriteLine("4. Salir");
             Console.Write("Seleccione una opción: ");
 
-            // Leer opción ingresada por el usuario
-            opcion = int.Parse(Console.ReadLine());
+            // Leer opción ingresada por el usuario con manejo de excepciones
+            try
+            {
+                opcion = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Debe ingresar un número válido.");
+                opcion = 0;
+            }
+           
 
             switch (opcion)
             {
                 case 1:
-                    RegistrarUsuario();
+                    string nuevoUsuario = "";
+                    RegistrarUsuario(ref nuevoUsuario);
                     break;
                 case 2:
-                    ValidarUsuario();
+                    string usuarioValidar = "";
+                    ValidarUsuario(ref usuarioValidar);
                     break;
                 case 3:
                     MostrarUsuarios();
@@ -52,16 +63,22 @@ class Program
         } while (opcion != 4);
     }
 
-    //  Método para registrar un nuevo usuario
-    static void RegistrarUsuario()
+    //  Método para registrar un nuevo usuario usando ref y try-catch al leer el nombre
+    static void RegistrarUsuario(ref string nombre)
     {
-        Console.Write("Ingrese el nombre del nuevo usuario: ");
-        string nombre = Console.ReadLine();
+      
+         Console.Write("Ingrese el nombre del nuevo usuario: ");
+         nombre = Console.ReadLine();
+       
 
         // Validamos si ya existe
         if (usuarios.Contains(nombre))
         {
             Console.WriteLine("El usuario ya está registrado.");
+        }
+        else if (string.IsNullOrWhiteSpace(nombre))
+        {
+            Console.WriteLine("El nombre no puede estar vacío.");
         }
         else
         {
@@ -70,15 +87,23 @@ class Program
         }
     }
 
-    //  Método para validar si un usuario existe
-    static void ValidarUsuario()
+    //  Método para validar si un usuario existe usando ref y try-catch al leer el nombre
+    static void ValidarUsuario(ref string nombre)
     {
-        Console.Write("Ingrese el nombre a validar: ");
-        string nombre = Console.ReadLine();
+       
+
+         Console.Write("Ingrese el nombre a validar: ");
+         nombre = Console.ReadLine();
+        
+      
 
         if (usuarios.Contains(nombre))
         {
             Console.WriteLine("El usuario existe en el sistema.");
+        }
+        else if (string.IsNullOrWhiteSpace(nombre))
+        {
+            Console.WriteLine("El nombre no puede estar vacío.");
         }
         else
         {
@@ -102,10 +127,4 @@ class Program
             }
         }
     }
-
-
-
-   
-
-
 }
