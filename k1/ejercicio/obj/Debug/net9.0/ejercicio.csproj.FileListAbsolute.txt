@@ -1,0 +1,14 @@
+C:\Users\labc205\Desktop\k1\ejercicio\bin\Debug\net9.0\ejercicio.exe
+C:\Users\labc205\Desktop\k1\ejercicio\bin\Debug\net9.0\ejercicio.deps.json
+C:\Users\labc205\Desktop\k1\ejercicio\bin\Debug\net9.0\ejercicio.runtimeconfig.json
+C:\Users\labc205\Desktop\k1\ejercicio\bin\Debug\net9.0\ejercicio.dll
+C:\Users\labc205\Desktop\k1\ejercicio\bin\Debug\net9.0\ejercicio.pdb
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.AssemblyInfoInputs.cache
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.AssemblyInfo.cs
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.csproj.CoreCompileInputs.cache
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.dll
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\refint\ejercicio.dll
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.pdb
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ejercicio.genruntimeconfig.cache
+C:\Users\labc205\Desktop\k1\ejercicio\obj\Debug\net9.0\ref\ejercicio.dll
